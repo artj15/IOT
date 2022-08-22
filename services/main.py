@@ -1,6 +1,5 @@
 import asyncio
 import logging
-import os
 
 from fastapi import (
     FastAPI,
@@ -8,7 +7,6 @@ from fastapi import (
 
 from misc import (
     ctrl,
-    config,
     db,
     redis,
 )
@@ -43,7 +41,6 @@ def main(app_config):
         responses=responses(),
     )
     app.config = app_config
-    check_folders(app_config)
     register_exception_handler(app)
     register_routers(app)
     register_startup(app)
@@ -96,11 +93,6 @@ async def shutdown(app):
 def register_routers(app):
     from . import routers
     return routers.register_routers(app)
-
-
-def check_folders(conf):
-    if not os.path.exists(config.template_files_folder(conf)):
-        os.makedirs(config.template_files_folder(conf))
 
 
 def responses():

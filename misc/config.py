@@ -11,7 +11,3 @@ def read_config(path):
         return None
     with open(path, 'r') as fd:
         return json.load(fd)
-
-
-def template_files_folder(conf: dict) -> str:
-    return conf['folders']['templates']

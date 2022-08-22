@@ -6,8 +6,5 @@
   },
   "redis": {
     "dsn": "redis://redis"
-  },
-  "folders": {
-    "templates": "./templates"
   }
 }

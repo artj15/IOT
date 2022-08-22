@@ -20,6 +20,7 @@ docker-compose up
     - PostgreSQL
     - FastApi
     - AsyncPg
+    - Asyncio
     - Pandas
     - Redis
 

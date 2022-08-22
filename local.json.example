@@ -1,0 +1,13 @@
+{
+  "debug": true,
+  "salt": "ASHdbasdkwertuyojmgbh.",
+  "db": {
+    "dsn": "postgresql://postgres:postgres@db/iot_app"
+  },
+  "redis": {
+    "dsn": "redis://redis"
+  },
+  "folders": {
+    "templates": "./templates"
+  }
+}

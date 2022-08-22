@@ -12,4 +12,4 @@ INSERT INTO data(filename, data_path, status) VALUES
 -- migrate:down
 
 
-TRUNCATE TABLE data CASCADE;
+TRUNCATE data CASCADE;

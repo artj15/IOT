@@ -16,6 +16,7 @@ docker-compose up
 
 Для решения задачи использовался стек:
 
+    - Docker-compose
     - PostgreSQL
     - FastApi
     - AsyncPg
